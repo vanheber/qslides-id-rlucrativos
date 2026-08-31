@@ -1,0 +1,22 @@
+{
+  "name": "qslides-id",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Template para Defesa de Logotipo e Identidade Visual (QSlides Identity)",
+  "scripts": {
+    "build": "node ../qslides-core/build.js --from-strategy content.md slides.md public/index.md",
+    "deploy": "npm run build && node ../qslides-core/deploy.js content.md",
+    "dev": "npm run build && npx -y live-server public",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "basic-ftp": "^5.3.0",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^16.0.0"
+  }
+}

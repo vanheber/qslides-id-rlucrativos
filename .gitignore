@@ -1,0 +1,7 @@
+node_modules/
+public/
+slides.md
+.DS_Store
+.env
+*.af~lock~
+*.zip
